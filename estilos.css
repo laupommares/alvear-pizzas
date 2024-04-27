@@ -1,0 +1,39 @@
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/w3images/pizza.jpg");
+  min-height: 90%;
+}
+
+.imagenPortada{
+    width: 100%;
+}
+.w3-grayscale-min {
+    filter: grayscale(30%);
+}
+
+#about{
+  background-color: #a65e4a;
+}
+
+
+.w3-display-left {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    transform: translate(0%,-50%);
+    }
+
+#irMenu{
+    position: absolute;
+    top: 70%;
+    left: 9%;
+    transform: translate(0%,-50%);
+}
+
+#fotosHamburguesas{
+  margin-top: 1em ;
+}

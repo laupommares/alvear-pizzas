@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Alvear Pizzas</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="stylesheet" href="estilos.css  ">
+
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">INICIO</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#nuestrosProductos" class="w3-bar-item w3-button">NUESTROS PRODUCTOS</a>
+    <a href="#myMap" class="w3-bar-item w3-button">UBICACION</a>
+    <a href="#about" class="w3-bar-item w3-button">SOBRE NOSOTROS</a>
+    <a href="#contact" class="w3-bar-item w3-button">CONTACTO</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <img src="img/opcion4.jpg" alt="pizzas" class="imagenPortada">
+  <!-- <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Abiero de 10am a 12pm</span>
+  </div> -->
+  <div class="w3-display-left w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:136px" id="alvearPortada">ALVEAR<br>PIZZAS</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>ALVEAR<br> PIZZAS</b></span>
+    <!-- <p><a href="#menu" class="w3-button w3-xxlarge w3-black">IR AL MENU</a></p> -->
+  </div>
+
+  <div class="w3-display-center"><p><a href="#menu" class="w3-button w3-xxlarge w3-black" id="irMenu">IR AL MENU</a></p></div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pizza Grande</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'pizzaChica');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pizza Chica</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Empanadas');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Empanadas</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Hamburguesas');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Hamburguesas</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Tartas');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Tartas</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Bebidas');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Bebidas</div>
+      </a>
+    </div>
+
+
+    <!-- Pizza grande -->
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+        <h1><b>Muzza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.300</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella y aceitunas. </p>
+        <hr>
+     
+        <h1><b>Muzza Con Morrones</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.800</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella y morrones.</p>
+        <hr>
+        
+        <h1><b>Anchoas</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.850</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella y anchoas.</p>
+        <hr>
+
+        <h1><b>Mixta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.750</span></h1>
+        <p class="w3-text-grey">Mitad salsa de tomate, anchoas y mitad muzzarella. </p>
+        <hr>
+  
+        <h1><b>Palmitos</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.400</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella y palmitos.</p>
+        <hr>
+  
+        <h1><b>Especial</b><span class="w3-right w3-tag w3-dark-grey w3-round">$5.300</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, jamón y morrones.</p>
+        <hr>
+  
+        <h1><b>Especial Con Palmitos</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.950</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, jamón Y palmitos.</p>
+        <hr>
+      
+        <h1><b>Anchoas</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.700</span></h1>
+        <p class="w3-text-grey">Salsa de tomate y anchoas.</p>
+        <hr>
+        
+        <h1><b>Fugazza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.600</span></h1>
+        <p class="w3-text-grey">Cebolla.</p>
+        <hr>
+  
+        <h1><b>Fugazza Especial</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.800</span></h1>
+        <p class="w3-text-grey">Cebolla y muzzarella.</p>
+        <hr>
+  
+        <h1><b>Fugazza Al Jamon</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.400</span></h1>
+        <p class="w3-text-grey">Cebolla, muzzarella y jamón.</p>
+        <hr>
+  
+        <h1><b>Fugazza Al Roque</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.030</span></h1>
+        <p class="w3-text-grey">Cebolla, muzzarella y roquefort.</p>
+        <hr>
+  
+        <h1><b>Calabresa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.800</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella y cantinpalo. </p>
+        <hr>
+  
+        <h1><b>Napolitana</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.200</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, tomate y queso reggianito.</p>
+        <hr>
+  
+        <h1><b>Napolitana Al Jamon</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.600</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, jamón, tomate, queso reggianito y huevo picado. </p>
+        <hr>
+  
+        <h1><b>Napolitana Al Roque</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.450</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, roquefort, tomate y queso reggianito.</p>
+        <hr>
+  
+        <h1><b>Napolitana Al Provolone</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.150</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, queso provolone, tomate, queso reggianito.</p>
+        <hr>
+      
+        <h1><b>Roquefort</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.800</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella y roquefort.</p>
+        <hr>
+  
+        <h1><b>Roquefort Al Jamon</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.950</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, roquefort, jamón y morrones.</p>
+        <hr>
+  
+        <h1><b>Roquefort Especial</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.900</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, roquefort y nueces.</p>
+        <hr>
+
+        <h1><b>Humita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.900</span></h1>
+        <p class="w3-text-grey">Salsa de tomate y humita.</p>
+        <hr>
+  
+        <h1><b>Humita Al Jamon</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.000</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, jamón y humita.</p>
+        <hr>
+  
+        <h1><b>Matambre</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.500</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, matambre y morrones.</p>
+        <hr>
+  
+        <h1><b>Matambre Con Palmitos </b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.970</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, matambre, palmitos y morrones.</p>
+        <hr>
+  
+        <h1><b>4 Quesos</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.350</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, queso provolone, queso roquefort y queso reggianito.</p>
+        <hr>
+  
+        <h1><b>Provolone </b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.000</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, provolone.</p>
+        <hr>
+  
+        <h1><b>Luna De Miel</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.900</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, roquefort, nueces, apio y rodajas huevo.</p>
+        <hr>
+  
+        <h1><b>Alberto</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.200</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, anchoas, palmitos y morrones.</p>
+        <hr>
+  
+        <h1><b>Brasilera</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.200</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, jamón, ananá y azúcar.</p>
+        <hr>
+  
+        <h1><b>Popeye</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.100</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, espinaca, queso reggianito y rodajas de huevo.</p>
+        <hr>
+  
+        <h1><b>Rucula</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.400</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, jamón crudo, queso provolone, rúcula y aceite de oliva. </p>
+        <hr>
+  
+        <h1><b>Golf</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.400</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, jamón, salsa golf, huevo picado.</p>
+        <hr>
+  
+        <h1><b>Especial Alvear</b>  <span class="w3-tag w3-red w3-round">Recomendada!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$6.450</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, jamón, salsa golf, palmitos, morrones y rodajas de huevo.</p>
+        <hr>
+
+        <h1><b>Vegana</b> <span class="w3-tag w3-red w3-round">New</span><span>  </span><span class="w3-tag w3-green w3-round"> Vegana!</span><span class="w3-right w3-tag w3-dark-grey w3-round">---</span></h1>
+        <p class="w3-text-grey">Cualquiera de las variedades con queso vegano de "Felices las vacas"</p>
+        <hr>
+  
+      </div>
+
+      <!-- Pizza chica -->
+
+        <div id="pizzaChica" class="w3-container menu w3-padding-32 w3-white">
+
+        <h1><b>Muzza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.450</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella y aceitunas. </p>
+        <hr>
+     
+        <h1><b>Muzza Con Morrones</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.605</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella y morrones.</p>
+        <hr>
+        
+        <h1><b>Anchoas</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.635</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella y anchoas.</p>
+        <hr>
+  
+        <h1><b>Mixta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.575</span></h1>
+        <p class="w3-text-grey">Mitad salsa de tomate, anchoas y mitad muzzarella. </p>
+        <hr>
+  
+        <h1><b>Palmitos</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.165</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella y palmitos.</p>
+        <hr>
+  
+        <h1><b>Especial</b><span class="w3-right w3-tag w3-dark-grey w3-round">$2.665</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, jamón y morrones.</p>
+        <hr>
+  
+        <h1><b>Especial Con Palmitos</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$3.205</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, jamón Y palmitos.</p>
+        <hr>
+      
+        <h1><b>Anchoas</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.545</span></h1>
+        <p class="w3-text-grey">Salsa de tomate y anchoas.</p>
+        <hr>
+        
+        <h1><b>Fugazza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.485</span></h1>
+        <p class="w3-text-grey">Cebolla.</p>
+        <hr>
+  
+        <h1><b>Fugazza Especial</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.605</span></h1>
+        <p class="w3-text-grey">Cebolla y muzzarella.</p>
+        <hr>
+  
+        <h1><b>Fugazza Al Jamon</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.725</span></h1>
+        <p class="w3-text-grey">Cebolla, muzzarella y jamón.</p>
+        <hr>
+  
+        <h1><b>Fugazza Al Roque</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.725</span></h1>
+        <p class="w3-text-grey">Cebolla, muzzarella y roquefort.</p>
+        <hr>
+  
+        <h1><b>Calabresa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.605</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella y cantinpalo. </p>
+        <hr>
+  
+        <h1><b>Napolitana</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.665/span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, tomate y queso reggianito.</p>
+        <hr>
+  
+        <h1><b>Napolitana Al Jamon</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.725</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, jamón, tomate, queso reggianito y huevo picado. </p>
+        <hr>
+  
+        <h1><b>Napolitana Al Roque</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.725</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, roquefort, tomate y queso reggianito.</p>
+        <hr>
+  
+        <h1><b>Napolitana Al Provolone</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.725</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, queso provolone, tomate, queso reggianito.</p>
+        <hr>
+      
+        <h1><b>Roquefort</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.635</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella y roquefort.</p>
+        <hr>
+  
+        <h1><b>Roquefort Al Jamon</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.695</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, roquefort, jamón y morrones.</p>
+        <hr>
+  
+        <h1><b>Roquefort Especial</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.665</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, roquefort y nueces.</p>
+        <hr>
+  
+        <h1><b>Humita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.665</span></h1>
+          <p class="w3-text-grey">Salsa de tomate y humita.</p>
+          <hr>
+  
+        <h1><b>Humita Al Jamon</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.725</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, jamón y humita.</p>
+        <hr>
+  
+        <h1><b>Matambre</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.665</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, matambre y morrones.</p>
+        <hr>
+  
+        <h1><b>Matambre Con Palmitos </b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.225</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, matambre, palmitos y morrones.</p>
+        <hr>
+  
+        <h1><b>4 Quesos</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.655</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, queso provolone, queso roquefort y queso reggianito.</p>
+        <hr>
+  
+        <h1><b>Provolone </b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.605</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, provolone.</p>
+        <hr>
+  
+        <h1><b>Luna De Miel</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.665</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, roquefort, nueces, apio y rodajas huevo.</p>
+        <hr>
+  
+        <h1><b>Alberto</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.605</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, anchoas, palmitos y morrones.</p>
+        <hr>
+  
+        <h1><b>Brasilera</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.815</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, jamón, ananá y azúcar.</p>
+        <hr>
+  
+        <h1><b>Popeye</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.785</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, espinaca, queso reggianito y rodajas de huevo.</p>
+        <hr>
+  
+        <h1><b>Rucula</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.785</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, jamón crudo, queso provolone, rúcula y aceite de oliva. </p>
+        <hr>
+  
+        <h1><b>Golf</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.785</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, jamón, salsa golf, huevo picado.</p>
+        <hr>
+  
+        <h1><b>Especial Alvear</b>  <span class="w3-tag w3-red w3-round">Recomendada!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$3.545</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, jamón, salsa golf, palmitos, morrones y rodajas de huevo.</p>
+        <hr>
+  
+    </div>
+
+    <!-- Empanadas -->
+    <div id="Empanadas" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Carne</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$400</span></h1>
+      <p class="w3-text-grey">Picadillo de carne con pasas de uva.</p>
+      <hr>
+   
+      <h1><b>Carne Cuchillo
+    </b> <span class="w3-right w3-tag w3-dark-grey w3-round">$400</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+      
+      <h1><b>Jamon y Queso</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$400</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+      
+      <h1><b>Palmitos, Jamón y Queso</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$400</span></h1>
+      <p class="w3-text-grey"></p>
+
+      <h1><b>Ananá, Jamón y Queso</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$400</span></h1>
+      <p class="w3-text-grey"></p>
+
+      <h1><b>Cebolla y Queso</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$400</span></h1>
+      <p class="w3-text-grey"></p>
+
+      <h1><b>Humita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$400</span></h1>
+      <p class="w3-text-grey"></p>
+
+      <h1><b>Humita y Jamón</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$400</span></h1>
+      <p class="w3-text-grey"></p>
+
+      <h1><b>Humita y Cebolla</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$400</span></h1>
+      <p class="w3-text-grey"></p>
+
+      <h1><b>Verdura</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$400</span></h1>
+      <p class="w3-text-grey"></p>
+
+      <h1><b>Muzzarella y Jamón </b> <span class="w3-right w3-tag w3-dark-grey w3-round">$400</span></h1>
+      <p class="w3-text-grey"></p>
+
+      <h1><b>Capresse</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$400</span></h1>
+      <p class="w3-text-grey"></p>
+
+      <h1><b>Calabresa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$400</span></h1>
+      <p class="w3-text-grey"></p>
+
+      <h1><b>Muzzarella y Anchoas</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$400</span></h1>
+      <p class="w3-text-grey"></p>
+    </div>
+    
+    <!-- Hamburguesas -->
+    <div id="Hamburguesas" class="w3-container menu w3-padding-32 w3-white">
+
+        <h1><a href="#michigan" class="w3-bar-item w3-button"><b>Michigan</b></a><span class="w3-right w3-tag w3-dark-grey w3-round">$3.850</span></h1>
+        <p class="w3-text-grey">Medallón 160g blend casero cocinado en manteca, pan de papa, cheddar y panceta.</p>
+        <hr>
+     
+        <h1><b>Michigan Doble Carne</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.300</span></h1>
+        <p class="w3-text-grey"></p>
+        <hr>
+        
+        <h1><a href="#americana" class="w3-bar-item w3-button"><b>Americana</b></a><span class="w3-right w3-tag w3-dark-grey w3-round">$3.850</span></h1>
+        <p class="w3-text-grey">Medallón 160g blend casero, pan brioche, cheddar, panceta y huevo.</p>
+        <hr>
+  
+        <h1><b>Americana Doble Carne</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.300</span></h1>
+        <p class="w3-text-grey"> </p>
+        <hr>
+  
+        <h1><a href="#caramel" class="w3-bar-item w3-button"><b>Caramel</b></a><span class="w3-right w3-tag w3-dark-grey w3-round">$3.850</span></h1>
+        <p class="w3-text-grey">Medallón 160g blend casero, pan brioche, salsa bbq, cebolla caramelizada, queso tybo y panceta.</p>
+        <hr>
+  
+        <h1><b>Caramel Doble Carne</b><span class="w3-right w3-tag w3-dark-grey w3-round">$4.300</span></h1>
+        <p class="w3-text-grey"></p>
+        <hr>
+  
+        <h1><a href="#criolla" class="w3-bar-item w3-button"><b>Criolla</b></a><span class="w3-right w3-tag w3-dark-grey w3-round">$3.850</span></h1>
+        <p class="w3-text-grey">Medallón 160g blend casero, pan brioche, muzzarella, cheddar, salsa criolla y huevo.</p>
+        <hr>
+      
+        <h1><b>Criolla Doble Carne</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.300</span></h1>
+        <p class="w3-text-grey"></p>
+        <hr>
+        
+        <h1><a href="#granalvear" class="w3-bar-item w3-button"><b>Gran Alvear</b></a><span class="w3-right w3-tag w3-dark-grey w3-round">$3.870</span></h1>
+        <p class="w3-text-grey">Medallón 160g blend casero, pan brioche, lechuga, tomate, aros de cebolla morada, cheddar, panceta y huevo.</p>
+        <hr>
+  
+        <h1><b>Gran Alvear Doble Carne</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.310</span></h1>
+        <p class="w3-text-grey"></p>
+        <hr>
+  
+        <h1><a href="#buenosaires" class="w3-bar-item w3-button"><b>Buenos Aires</b></a> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.850</span></h1>
+        <p class="w3-text-grey">Medallón 160g blend casero, pan de papa, cheddar, salsa buenos aires (ketchup y cebolla)</p>
+        <hr>
+  
+        <h1><b>Buenos Aires Doble Carne</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.300</span></h1>
+        <p class="w3-text-grey"></p>
+        <hr>
+  
+        <h1><a href="#california" class="w3-bar-item w3-button" ><b>California</b> </a><span class="w3-right w3-tag w3-dark-grey w3-round">$3.850</span></h1>
+        <p class="w3-text-grey">Medallón 160g blend casero, pan de papa, salsa bbq, cheddar, panceta, huevo.</p>
+        <hr>
+  
+        <h1><b>California Doble Carne</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.300</span></h1>
+        <p class="w3-text-grey"></p>
+        <hr>
+  
+        <h1><b>Paty Completa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.850</span></h1>
+        <p class="w3-text-grey">Medallon paty®, pan brioche, lechuga, tomate, jamón, queso tybo, huevo.</p>
+        <hr>
+  
+        <h1><b>Paty Completa Doble</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.320</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, queso provolone, tomate, queso reggianito.</p>
+        <hr>
+
+        <h1><b>Porcion Papas Fritas</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.300</span></h1>
+        <p class="w3-text-grey"> </p>
+        <hr>
+      
+        <h1><b>Paty Jamon y Queso</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.830</span></h1>
+        <p class="w3-text-grey"></p>
+        <hr>
+  
+        <h1><b>Paty Solo Queso</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.820</span></h1>
+        <p class="w3-text-grey"></p>
+        <hr>
+  
+        <h1><b>Gourmet Solo Carne</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.660</span></h1>
+        <p class="w3-text-grey">Salsa de tomate, muzzarella, roquefort y nueces.</p>
+        <hr>
+  
+        <h1><b>Paty Solo Carne</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.660</span></h1>
+          <p class="w3-text-grey"></p>
+          <hr>
+  
+        <h1><b>Paty Jamon, Queso, Huevo</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.850  </span></h1>
+        <p class="w3-text-grey"></p>
+        <hr>
+    </div>
+
+    <!-- Tartas -->
+    <div id="Tartas" class="w3-container menu w3-padding-32 w3-white">
+        <h1><b>Tarta Espinaca</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.400</span></h1>
+        <p class="w3-text-grey"></p>
+        <hr>
+
+        <h1><b>1/2 Espinaca</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.700</span></h1>
+        <p class="w3-text-grey"></p>
+        <hr>
+        
+        <h1><b>Tarta Jamon y Queso</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.400</span></h1>
+        <p class="w3-text-grey"></p>
+        <hr>
+
+        <h1><b>1/2 Jamon y Queso</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.700</span></h1>
+        <p class="w3-text-grey"></p>
+        <hr>
+       
+        <h1><b>Tarta Humita y Jamon</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.400</span></h1>
+        <p class="w3-text-grey"></p>
+        <hr>
+
+        <h1><b>1/2 Humita y Jamon</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.700</span></h1>
+        <p class="w3-text-grey"></p>
+        <hr>
+        
+        <h1><b>Tarta Carne</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.400</span></h1>
+        <p class="w3-text-grey"> </p>
+        <hr>
+
+        <h1><b>1/2 Carne</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.700</span></h1>
+        <p class="w3-text-grey"> </p>
+        <hr>
+  
+        <h1><b>Tarta Completa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.300</span></h1>
+        <p class="w3-text-grey"></p>
+        <hr>
+
+        <h1><b>1/2 Completa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.300</span></h1>
+        <p class="w3-text-grey"></p>
+        <hr>
+    </div>
+
+     <!-- Bebidas -->
+     <div id="Bebidas" class="w3-container menu w3-padding-32 w3-white">
+        
+        <h1><b>Gaseosa X1500cc</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$1.250</span></h1>
+        <p class="w3-text-grey">Coca Cola, Sprite, Sprite Zero, Schweppes Pomelo, Coca Cola Zero, Coca Cola Light, Fanta.</p>
+        <hr>
+
+        <h1><b>Aquarius X1500cc</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$1.050</span></h1>
+        <p class="w3-text-grey">Naranja, Pomelo.</p>
+        <hr>
+        
+        <h1><b>Heineken Lata X473cc</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$1.350</span></h1>
+        <p class="w3-text-grey"></p>
+        <hr>
+
+        <h1><b>Imperial Golden X473cc </b> <span class="w3-right w3-tag w3-dark-grey w3-round">$1.100</span></h1>
+        <p class="w3-text-grey"></p>
+        <hr>
+       
+        <h1><b>Schneider X473cc</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$1.100</span></h1>
+        <p class="w3-text-grey">Rubia, Negra.</p>
+        <hr>
+
+        <h1><b>Miller X473cc</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$1.100</span></h1>
+        <p class="w3-text-grey"></p>
+        <hr>
+        
+        <h1><b>Imperial X473cc</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$1.100</span></h1>
+        <p class="w3-text-grey">Apa, Ipa, Lager.</p>
+        <hr>
+
+        <h1><b>Salta X473cc</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$1.100</span></h1>
+        <p class="w3-text-grey">Rubia, Roja.</p>
+        <hr>
+  
+        <h1><b>Porron X330cc Heineken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$1.000</span></h1>
+        <p class="w3-text-grey"></p>
+        <hr>
+
+        <h1><b>Porron X330cc Miller</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$1.000</span></h1>
+        <p class="w3-text-grey"></p>
+        <hr>
+        
+        <h1><b>Porron Corona 330cc</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$1.100</span></h1>
+        <p class="w3-text-grey"></p>
+        <hr>
+
+  </div>
+</div>
+
+<!-- Nuestros productos-->
+<div  class="w3-container w3-padding-64 w3-xlarge" id="nuestrosProductos"></div>
+<h1 class="w3-center w3-jumbo" style="margin-bottom:64px">NUESTROS PRODUCTOS</h1>
+<br>  
+
+<!-- PIZZA -->
+<h1 class="w3-center w3-jumbo" style="margin-bottom:64px">PIZZAS</h1>
+<p>Consultá en nuestro menú las más de 30 variedades de pizzas</p>  
+ <!-- First Photo Grid Pizza-->
+ <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+  <div class="w3-half">
+    <img src="img/pizzas/muzza.jpg" alt="Muzza" style="width:100%" id="muzza">
+  </div> 
+  <div class="w3-half">
+    <img src="img/pizzas/especialalvear.jpg " alt="especialalvear" style="width:100%" id="especialalvear">
+  </div>
+</div>
+<br>  
+
+ <!-- Second Photo Grid Pizza-->
+ <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+  <div class="w3-half">
+    <img src="img/pizzas/especial.jpg" alt="Especial" style="width:100%" id="especial">
+  </div> 
+  <div class="w3-half">
+    <img src="img/pizzas/popeye.jpg " alt="Popeye" style="width:100%" id="popeye">
+  </div>
+</div>
+<br>  
+
+ <!-- Third Photo Grid Pizza-->
+ <div class="w3-row-padding w3-padding-16 w3-center" id="food" >
+  <div class="w3-half">
+    <img src="img/pizzas/tomate.jpg " alt="Tomate" style="width:100%" id="tomate">
+  </div>
+  <div class="w3-half">
+    <img src="img/pizzas/matambre.jpg" alt="Matambre" style="width:100%" id="matambre">
+  </div> 
+</div>
+<br>  
+
+<!-- HAMBURGUESAS -->
+<h1 class="w3-center w3-jumbo" style="margin-bottom:64px" id="fotosHamburguesas">HAMBURGUESAS</h1>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-half">
+      <img src="img/michigan.jpg" alt="Michigan" style="width:100%" id="michigan">
+      <h3>Michigan</h3>
+      <p>Medallón 160g blend casero cocinado en manteca, pan de papa, cheddar y panceta.</p>
+    </div>
+    <div class="w3-half">
+      <img src="img/americana.jpg " alt="Americana" style="width:100%" id="americana">
+      <h3>Americana</h3>
+      <p>Medallón 160g blend casero, pan brioche, cheddar, panceta y huevo.</p>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-half">
+      <img src="img/caramel.jpg" alt="Caramel" style="width:100%" id="caramel">
+      <h3>Caramel</h3>
+      <p>Medallón 160g blend casero, pan brioche, salsa bbq, cebolla caramelizada, queso tybo y panceta.</p>
+    </div>
+    <div class="w3-half">
+      <img src="img/criolla.jpg" alt="Criolla" style="width:100%" id="criolla">
+      <h3>Criolla</h3>
+      <p>Medallón 160g blend casero, pan brioche, muzzarella, cheddar, salsa criolla y huevo.</p>
+    </div>
+  </div>
+
+    <!-- Third Photo Grid-->
+    <div class="w3-row-padding w3-padding-16 w3-center">
+      <div class="w3-half">
+        <img src="img/granalvear.jpg" alt="Gran Alvear" style="width:100%" id="granalvear">
+        <h3>Gran Alevar</h3>
+        <p>Medallón 160g blend casero, pan brioche, lechuga, tomate, aros de cebolla morada, cheddar, panceta y huevo.</p>
+      </div>
+      <div class="w3-half">
+        <img src="img/buenosaires.jpg" alt="Buenos Aires" style="width:100%" id="buenosaires">
+        <h3>Buenos Aires</h3>
+        <p>Medallón 160g blend casero, pan de papa, cheddar, salsa buenos aires (ketchup y cebolla)
+        </p>
+      </div>
+    </div>
+
+        <!-- Quarter Photo Grid-->
+        <div class="w3-row-padding w3-padding-16 w3-center">
+          <div class="w3-half">
+            <img src="img/california.jpg" alt="California" style="width:100%" id="california">
+            <h3>California</h3>
+            <p>Medallón 160g blend casero, pan de papa, salsa bbq, cheddar, panceta, huevo.</p>
+          </div>
+          <div class="w3-half">
+            <img src="img/conpapas.jpg" alt="Con papas" style="width:100%" id="conpapas">
+            <h3>Todas nuestras hamburguesas vienen acompañadas con papas fritas</h3>
+            <p>Pedi la que más te guste con doble hamburguesa para más sabor!</p>
+          </div>
+        </div>
+
+<!-- EMPANADAS -->
+  <h1 class="w3-center w3-jumbo" style="margin-bottom:44px">EMPANADAS</h1>
+  <p>Consultá en el menú nuestras variedades</p>
+
+ <!-- First Photo Grid Empanada-->
+ <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+  <div class="w3-half">
+    <img src="img/empanadas/1.jpg" alt="Empanadas" style="width:100%" id="empanadas">
+  </div> 
+  <div class="w3-half">
+    <img src="img/empanadas/2.jpg " alt="Empanadas" style="width:100%" id="empanadas">
+  </div>
+</div>
+<br>  
+ <!-- Second Photo Grid Empanada-->
+ <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+  <div class="w3-half">
+    <img src="img/empanadas/3.jpg" alt="Empanadas" style="width:100%" id="empanadas">
+  </div> 
+  <div class="w3-half">
+    <img src="img/empanadas/4.jpg " alt="Empanadas" style="width:100%" id="empanadas">
+  </div>
+</div>
+<br>  
+
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+
+</div>
+
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Sobre Nosotros</h1>
+    <p> Desde 1990, en el corazón de Chivilcoy, provincia de Buenos Aires, hemos dedicado nuestra pasión por la comida a ofrecerte lo mejor en sabor y calidad. En Alvear Pizzas, somos una pizzería familiar comprometida con la tradición y el arte culinario, elaborando productos artesanales con la frescura y excelencia que nos caracteriza.
+        <br>
+        Nuestro compromiso con la calidad se refleja en cada etapa de nuestro proceso. Seleccionamos cuidadosamente la mejor materia prima para asegurar que cada bocado sea una experiencia única. Nuestras pizzas son el resultado de una combinación perfecta entre ingredientes frescos, masa casera y el toque justo de nuestros chefs, transmitiendo en cada porción el auténtico sabor casero que nos distingue.
+        <br>
+        Además de nuestras deliciosas pizzas, en Alvear Pizzas nos enorgullecemos de ofrecerte una amplia variedad de opciones gastronómicas. Desde nuestras sabrosas empanadas y jugosas hamburguesas hasta nuestras irresistibles tartas, cada platillo está cuidadosamente preparado para satisfacer tu paladar y deleitar tu gusto por lo auténtico.
+        <br>
+        Queremos ser más que tu pizzería de confianza; queremos ser parte de tus momentos especiales. Ya sea una reunión familiar, una salida con amigos o simplemente disfrutar de una comida reconfortante, en Alvear Pizzas encontrarás ese lugar acogedor donde la calidad y la calidez se fusionan para brindarte una experiencia culinaria inolvidable.
+        <br>
+        ¡Te invitamos a que nos visites y descubras por qué, desde hace más de tres décadas, Alvear Pizzas es sinónimo de excelencia, tradición y pasión por la buena comida!
+        <br>
+        ¡Gracias por confiar en nosotros para compartir momentos deliciosos en cada bocado!
+        
+        </p>
+  
+   <div> <img src="img/nosotros.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+   </div>
+
+    <h1><b>Horarios de atención</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Lunes CERRADO</p>
+        <p>Martes	de 11 a 13:30 y de  19:30 a 22:30 <br>
+          miércoles	11 a 13:30 y de 19:30 a 22:30 <br>
+          jueves	11 a 13:30 y de 19:30 y 22:30 </p>
+
+      </div>
+      <div class="w3-col s6">
+        <p>Viernes  de 11 a 13:30 y de 19:30 a 11:00</p>
+        <p>Sábado	11 a 13:30 y de 19:30 a 23</p>
+        <p>Domingo	19:30 a 22:30</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="img/maps.png" class="w3-image " style="width:100%;" id="myMap">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-dark-grey w3-grayscale-min w3-xlarge" id="contact">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contacto</h1>
+    <p>Pueden encontrarnos en Alvear 58 o al 02346 43-1075</p>
+    <p><span class="w3-tag"></span> NO TOMAMOS PEDIDOS POR ESTE MEDIO</p>
+    <p class="w3-xxlarge">Si tenes alguna sugerencia, sos proveedor o te gustaría trabajar con nosotros podes dejarnos tu mensaje o enviarnos un email.</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nombre" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Numero de contacto" required name="telephone"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Titulo del Mensaje" required name="date" ></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Mensaje" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">ENVIAR MENSAJE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-3  8 w3-xxlarge">
+  <p>Alvear Pizzas<a ></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
